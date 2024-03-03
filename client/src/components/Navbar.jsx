@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 // style imports
 import '../css/navbar.css'
@@ -8,6 +8,38 @@ export default function Navbar() {
     // sets the image for menu icons
     const [button, setButton] =useState('../assets/menu-inactive.png')
     const [show, setShow] = useState(false)
+    let maxSmallScreen = 460
+
+    // shows the menu options if screen is over 400px
+    useEffect(() =>{
+        if(window.innerWidth >= maxSmallScreen){
+            setShow(true)
+        }
+    },[])
+    // shows menu options if screen is resized and over 400px
+    useEffect(() => {
+        const handleResize = () => {
+
+            if(window.innerWidth >= maxSmallScreen){
+                setShow(true)
+            }else{
+                setShow(false)
+            }
+        };
+    
+        // Initial check
+        handleResize();
+    
+        // Event listener for window resize
+        window.addEventListener('resize', handleResize);
+    
+        // Cleanup
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }, window.innerWidth)
+
+
     // handles menu click funtionality
     const handleMenuClick = () => {
         if(button ==='../assets/menu-inactive.png'){

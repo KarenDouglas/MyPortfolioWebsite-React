@@ -9,7 +9,6 @@
 .nav{
     width: 80%;
     background: var(--pinkGreenGrad);
-
 }
 .navlink-container{
     min-height: 30px;
@@ -37,3 +36,40 @@ background: none;
 .menu-btn img{
     height: 50px;
 }
+
+/* Navigation Styles for medium screens */
+@media screen and (min-width: 460px) {
+    .menu-btn-container{
+        display: none;
+    }
+    .nav-container{
+        max-width: 1100px;
+        margin: 0 auto;
+        flex-direction: row-reverse;
+    }
+    .nav{
+        display: flex;
+        background: var(--darkColor);
+        margin-top: 30px;
+        border-top: 20px solid;
+    /* use border-image for border color or style when working with gradients or images  */
+        border-image: var(--pinkGreenGrad) 1 0 0 0 stretch;
+        border-image-slice: 1;
+        width: 80%; 
+
+    }
+    .navlink-container{
+        border: var(--pinkColor) 2px solid;
+        border-top: none;
+        margin: 0 10px 0 0;
+    }
+    .navlink-container a {
+        color: white;
+        font-size: var(--fontSmall);
+        font-weight: normal;
+
+    }
+
+
+
+  }

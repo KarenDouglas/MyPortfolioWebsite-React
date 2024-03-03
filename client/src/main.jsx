@@ -6,8 +6,7 @@ import AboutPage from './pages/AboutPage.jsx';
 import ContactPage from './pages/ContactPage.jsx';
 import ResumePage from './pages/ResumePage.jsx';
 import ProjectsPage from './pages/ProjectsPage.jsx';
-import './css/resets.css';
-import './css/index.css';
+
 
 // navigation paths and pages
 const router = (
