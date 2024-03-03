@@ -1,0 +1,83 @@
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+
+.nav{
+    width: 80%;
+    background: var(--pinkGreenGrad);
+}
+.navlink-container{
+    min-height: 30px;
+    padding: 10px;
+    border: var(--darkColor) 5px solid
+}
+.navlink-container:hover a{
+    color: var(--linkColor);
+}
+.navlink-container a{
+    text-decoration: none;
+    color: var(--darkColor);
+    font-size: var(--fontMed);
+    font-weight:bolder;
+}
+.menu-btn-container{
+    border-bottom: var(--greenColor) 2px solid;
+    width: 100%;
+}
+.menu-btn{
+padding: 20px;
+max-width: fit-content;
+background: none;
+}
+.menu-btn img{
+    height: 50px;
+}
+/* Navigation Styles for medium screens */
+@media screen and (min-width: 460px) {
+    .menu-btn-container{
+        display: none;
+    }
+    .nav-container{
+        max-width: 1100px;
+        margin: 0 auto;
+        flex-direction: row-reverse;
+    }
+    .nav{
+        display: flex;
+        background: var(--darkColor);
+        margin-top: 30px;
+        border-top: 20px solid;
+        /* use border-image for border color or style when working with gradients or images  */
+        border-image: var(--pinkGreenGrad) 1 0 0 0 stretch;
+        border-image-slice: 1;
+        justify-content: space-between;
+        padding-right: 40px;
+        width: 80%; 
+    }
+    .navlink-container{
+        border: var(--pinkColor) 2px solid;
+        border-top: none;
+    }
+    .navlink-container a {
+        color: white;
+        font-size: var(--fontSmall);
+        font-weight: normal;
+        
+    }
+    
+    /* navigation styles for large screens */
+      @media screen and (min-width: 630px){
+        .nav{
+            display: flex;
+            justify-content: start;
+            gap: 30px;
+        }
+      } 
+    
+    
+    
+  }

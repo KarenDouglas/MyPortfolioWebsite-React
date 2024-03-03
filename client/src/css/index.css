@@ -1,3 +1,14 @@
-body{
-
+:root{
+    --darkColor : #171219;
+    --greenColor: #5DA271;
+    --linkColor: #FFE66D;
+    --pinkColor: #8E5572;
+    --pinkGreenGrad: linear-gradient(to bottom right, #8E5572, #5DA271);
+    --fontMed: 24px;
+    --fontSmall: 18px;
 }
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--darkColor);
+    color: white;
+  }
