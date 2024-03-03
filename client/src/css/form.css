@@ -1,10 +1,13 @@
 .form-container{
-    max-width: 90%;
-    margin: 0 auto;
+    max-width: 95%;
+    margin: 20px auto;
 }
-
 .form{
     background-color: var(--greenColor);
+    display: flex;
+    flex-direction: column;
+}
+.form-group1{
     display: flex;
     flex-direction: column;
 }
@@ -13,11 +16,16 @@
     flex-direction: column;
 }
 
-.form input, .form textarea, .form button{
+.form-group1 input{
 min-width: 80%;
 margin: 15px auto 0;
 background-color: rgb(228, 166, 176);
 }
+.form-group textarea, .form-group button{
+    min-width: 80%;
+    margin: 15px auto 0;
+    background-color: rgb(228, 166, 176);
+    }
 .form input, .form button{
     min-height: 40px;
 }
@@ -32,3 +40,24 @@ background-color: rgb(228, 166, 176);
     background:var(--linkColor) ;
     color: var(--darkColor);
 }
+
+@media screen and (min-width: 460px) {
+    .form-container{
+        max-width: 600px;
+    }
+    .form-group1{
+        flex-direction: row;
+    }
+    .form{
+        
+        border-color: var(--pinkColor);
+        border-width: 2px 2px 2px 15px;
+        border-style: solid;
+    }
+    .form-group1 input{
+        min-width: 30%;
+        margin: 15px auto 0;
+        background-color: rgb(228, 166, 176);
+    }
+}
+
