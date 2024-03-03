@@ -1,0 +1,14 @@
+.card-container {
+    margin-top: 30px;
+}
+.card-container h1{
+    font-size: var(--fontLarge);
+    text-align: center;
+}
+.card-container .div{
+    border-bottom: 10px solid;
+    border-image: var(--pinkGreenGrad)1 0 0 0 stretch;
+    border-image-slice: 1;
+    max-width: 70%;
+    margin: 8px auto;
+}

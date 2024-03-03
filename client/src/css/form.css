@@ -1,0 +1,34 @@
+.form-container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.form{
+    background-color: var(--greenColor);
+    display: flex;
+    flex-direction: column;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.form input, .form textarea, .form button{
+min-width: 80%;
+margin: 15px auto 0;
+background-color: rgb(228, 166, 176);
+}
+.form input, .form button{
+    min-height: 40px;
+}
+
+.form button{
+    background: var(--darkColor);
+    color: var(--linkColor);
+    border: var(--linkColor) 1px solid;
+}
+
+.form button:hover{
+    background:var(--linkColor) ;
+    color: var(--darkColor);
+}

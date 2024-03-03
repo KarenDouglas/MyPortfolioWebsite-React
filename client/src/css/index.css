@@ -6,6 +6,7 @@
     --pinkGreenGrad: linear-gradient(to bottom right, #8E5572, #5DA271);
     --fontMed: 24px;
     --fontSmall: 18px;
+    --fontLarge: 32px
 }
 body {
     font-family: 'Roboto', sans-serif;
