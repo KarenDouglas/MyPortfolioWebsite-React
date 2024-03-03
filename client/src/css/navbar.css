@@ -36,7 +36,6 @@ background: none;
 .menu-btn img{
     height: 50px;
 }
-
 /* Navigation Styles for medium screens */
 @media screen and (min-width: 460px) {
     .menu-btn-container{
@@ -52,24 +51,33 @@ background: none;
         background: var(--darkColor);
         margin-top: 30px;
         border-top: 20px solid;
-    /* use border-image for border color or style when working with gradients or images  */
+        /* use border-image for border color or style when working with gradients or images  */
         border-image: var(--pinkGreenGrad) 1 0 0 0 stretch;
         border-image-slice: 1;
+        justify-content: space-between;
+        padding-right: 40px;
         width: 80%; 
-
     }
     .navlink-container{
         border: var(--pinkColor) 2px solid;
         border-top: none;
-        margin: 0 10px 0 0;
     }
     .navlink-container a {
         color: white;
         font-size: var(--fontSmall);
         font-weight: normal;
-
+        
     }
-
-
-
+    
+    /* navigation styles for large screens */
+      @media screen and (min-width: 630px){
+        .nav{
+            display: flex;
+            justify-content: start;
+            gap: 30px;
+        }
+      } 
+    
+    
+    
   }
