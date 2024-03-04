@@ -1,0 +1,15 @@
+.resume-container{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.resume-container p{
+    margin: 10px 0;
+}
+.resume-container a {
+    text-decoration: none;
+    color: var(--linkColor);
+}
+.resume-container a:hover{
+    text-decoration: underline;
+}
