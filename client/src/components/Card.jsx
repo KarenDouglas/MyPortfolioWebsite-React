@@ -8,11 +8,13 @@ export default function Card({form}) {
     return (
         <>
         <section className='card-container'>
-            <h1>title</h1>
-            <div className='div'></div>
-        {form &&
-            <Form/>
-        }
+            <section className='card-border'>
+                <h1>title</h1>
+                <div className='div'></div>
+                {form &&
+                    <Form/>
+                }
+            </section>
         </section>
         </>
     )

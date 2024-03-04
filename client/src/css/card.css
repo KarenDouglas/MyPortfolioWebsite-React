@@ -9,6 +9,17 @@
     border-bottom: 10px solid;
     border-image: var(--pinkGreenGrad)1 0 0 0 stretch;
     border-image-slice: 1;
-    max-width: 70%;
+    max-width: 600px;
     margin: 8px auto;
+}
+
+@media screen and (min-width: 460px) {
+    .card-border{
+        padding: 10px 0;
+        border-style: solid;
+        border-image: var(--greenPinkGrad) 1 1 1 1 stretch;
+        border-width: 2px 5px 2px 20px ;
+        max-width: 800px;
+        margin: 0 auto;
+    }
 }
