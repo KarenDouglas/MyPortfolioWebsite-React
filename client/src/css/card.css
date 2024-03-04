@@ -1,11 +1,11 @@
 .card-container {
     margin-top: 30px;
 }
-.card-container h1{
+.card-title-group h1{
     font-size: var(--fontLarge);
     text-align: center;
 }
-.card-container .div{
+.card-title-group .div{
     border-bottom: 10px solid;
     border-image: var(--pinkGreenGrad)1 0 0 0 stretch;
     border-image-slice: 1;
@@ -22,4 +22,9 @@
         max-width: 800px;
         margin: 0 auto;
     }
+    .card-title-group, .card-title-group .div{
+        margin: 20px;
+        max-width: 300px;
+    }
+    
 }

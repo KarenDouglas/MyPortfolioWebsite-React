@@ -9,8 +9,11 @@ export default function Card({form}) {
         <>
         <section className='card-container'>
             <section className='card-border'>
+                <header className='card-title-group'>
                 <h1>title</h1>
                 <div className='div'></div>
+
+                </header>
                 {form &&
                     <Form/>
                 }

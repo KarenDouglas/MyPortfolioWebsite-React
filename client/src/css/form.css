@@ -43,7 +43,8 @@ background-color: rgb(228, 166, 176);
 
 @media screen and (min-width: 460px) {
     .form-container{
-        max-width: 600px;
+        max-width: 70%;
+        margin: 30px 45px;
     }
     .form-group1{
         flex-direction: row;
