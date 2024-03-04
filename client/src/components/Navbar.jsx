@@ -37,7 +37,7 @@ export default function Navbar() {
         return () => {
           window.removeEventListener('resize', handleResize);
         };
-      }, window.innerWidth)
+      }, [window.innerWidth])
 
 
     // handles menu click funtionality
@@ -51,6 +51,13 @@ export default function Navbar() {
         }
 
     }
+    // handles navigation link functionality
+    const handleMenuReset = () => {
+        if(window.innerWidth <= maxSmallScreen){
+            setShow(false)
+            setButton('../assets/menu-inactive.png')
+        }
+    } 
     return (
         <>
     <section className="nav-container">  
@@ -67,16 +74,16 @@ export default function Navbar() {
         {/* NAVIGATION LINKS */}
        {show && <nav className="nav">
             <div className="navlink-container">
-            <Link to={'/'}>About</Link>                
+            <Link to={'/'} onClick={handleMenuReset}>About</Link>                
             </div>
             <div className="navlink-container">
-            <Link to={'/projects'}>Projects</Link>
+            <Link to={'/projects'} onClick={handleMenuReset}>Projects</Link>
             </div>
             <div className="navlink-container">
-            <Link to={'/contact'}>Contact Me</Link>
+            <Link to={'/contact'} onClick={handleMenuReset}>Contact Me</Link>
             </div>
             <div className="navlink-container">
-            <Link to={'/resume'}>Resume</Link>
+            <Link to={'/resume'} onClick={handleMenuReset}>Resume</Link>
             </div>
         </nav>}
         </section>   
