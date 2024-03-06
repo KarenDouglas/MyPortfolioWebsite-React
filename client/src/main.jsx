@@ -14,7 +14,8 @@ const router = (
     <Route path="/" element={<App />}>
       <Route index element={<AboutPage />} />
       <Route path="contact" element={<ContactPage />} />
-      <Route path="projects" element={<ProjectsPage />} />
+      <Route path="projects/" element={<ProjectsPage />} />
+      <Route path="projects/:projectId" element={<ProjectsPage />} />
       <Route path="resume" element={<ResumePage />} />
     </Route>
   </Routes>
