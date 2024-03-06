@@ -23,11 +23,13 @@ export default function Project(props) {
                         <article className="project-desc-container">
                             <p className="desc">{props.desc}</p>
                             <section className='project-link-group'>
+                                {props.liveSite &&
                                 <a 
                                 href={props.liveSite}
                                 target='_blank'
                                 >
                                     View Site</a>
+                                }
                                 <a 
                                 href={props.github}
                                 target='_blank'

@@ -1,0 +1,55 @@
+.main-container{
+max-width: 400px;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding-left: 20px;
+
+}
+.pitch h1{
+    margin-top: 30px;
+    color: var(--greenColor);
+    font-size: var(--fontLarge);
+    text-align: center;
+}
+.pitch p{
+    font-size: var(--fontSmall);
+    max-width: 400px;
+    text-align: center;
+    line-height: 1.33;
+    margin: 20px 0;
+}
+.hire{
+    text-decoration: none;
+    color: var(--linkColor);
+}
+
+.hire:hover{
+    text-decoration: underline;
+}
+.profilePic{
+    margin-top: 60px;
+}
+@media screen and (min-width: 670px){
+    .main-container{
+        flex-direction: row;
+        max-width: 1000px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .pitch{
+        margin-top: 100px;
+    }
+    .pitch h1{ 
+        text-align:left;
+        font-size: 48px;
+    }
+    .pitch p{
+        text-align: left;
+        font-size: 20px;
+        line-height: 1.33;
+        max-width: 600px;
+
+    }       
+}

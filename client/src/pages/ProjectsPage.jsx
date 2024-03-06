@@ -6,10 +6,8 @@ import { json, useParams } from 'react-router-dom';
 export default function ProjectsPage() {
     const [jsonData, setJsonData] = useState(null);
     const [project, setProject] = useState(null);
+    const { projectId } = useParams();  
    
-    const { projectId } = useParams();
-    // renders the first project
-
     // renders data from json db
     useEffect(() => {
     
@@ -53,9 +51,7 @@ export default function ProjectsPage() {
             data= {jsonData}
             />
         
-        }
-            
-        
+        }       
         </>
     )
 }
