@@ -1,5 +1,5 @@
 .projects-top{
-    margin-top: 20px;
+    margin-top: 60px;
 }
 .projects-container{
     display: flex;
@@ -12,8 +12,10 @@
     margin: 0 auto;
 }
 .project-title h1{
+font-size: var(--fontMed);
 text-align: center;
 margin: 20px 0;
+color: var(--greenColor);
 }
 .project-desc-container{
     max-width: 400px;
@@ -24,8 +26,8 @@ margin: 20px 0;
 .project-link-group{
     max-width: 320px;
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 20px;
+    justify-content: space-around;
+    margin: 40px auto;
 }
 .project-link-group a {
     text-decoration: none;
@@ -37,9 +39,13 @@ margin: 20px 0;
 
 }
 .projects-list-container{
-    margin: 20px auto;
+    margin: 60px auto;
     max-width: 400px;
     text-align: center;
+}
+.projects-list-container h1{
+    font-size: var(--fontMed);
+    color: var(--pinkColor);
 }
 .projects-list{
     display: flex;
@@ -53,6 +59,10 @@ margin: 20px 0;
 }
 .projects-list a{
     color: var(--linkColor);
+    text-decoration: none;
+}
+.projects-list a:hover{
+    text-decoration: underline;
 }
 @media screen and (min-width: 630px){
 
@@ -65,7 +75,7 @@ margin: 20px 0;
     .project-title h1{
         text-align: left;
         margin: 20px 50px;
-        font-size: var(--fontMed);
+        font-size: var(--fontLarge);
     }
     .project-desc-container{
         text-align: left;
@@ -82,5 +92,7 @@ margin: 20px 0;
     .projects-list-container{
     max-width: 190px;
     }
-    
+    .projects-list-container h1{
+        font-size: var(--fontLarge);
+    }
 }
