@@ -1,0 +1,15 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  # Redirect from /project to the main entry point of your app
+  from = "/project"
+  to = "/index.html"
+  status = 200  # Respond with a 200 status code to avoid routing issues
+
+[[redirects]]
+  # Redirect from /projects/:projectId to the main entry point of your app
+  from = "/projects/:projectId"
+  to = "/index.html"
+  status = 200  # Respond with a 200 status code to avoid routing issues
