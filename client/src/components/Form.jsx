@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/form.css'
 
-
+// handles on focus events and renders form
 export default function Form() {
     const handleBlur = (e) => {
         const inputValue = e.target.value

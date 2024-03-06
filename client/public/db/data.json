@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "title": "Scoot Remix App",
+        "tech": [
+            "Remix",
+            "React",
+            "TypeScript",
+            "HTML5",
+            "FlexBox"
+        ],
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "img": "../assets/projects/scoot.png",
+        "liveSite": "https://scoot-multipage.vercel.app/",
+        "github": "https://github.com/KarenDouglas/Scoot-Multipage-Website"
+
+    },
+    {
+        "id": 2,
+        "title": "Weather Dashboard App",
+        "tech":[],
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "img": "../assets/projects/weatherDashboard.png",
+        "liveSite": "https://karendouglas.github.io/weather-dashboard/",
+        "github": "https://github.com/KarenDouglas/weather-dashboard"
+
+    },
+    {
+        "id": 3,
+        "title": "Word Guessing Game",
+        "tech":[],
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "img": "../assets/projects/wordGuessingGame.png",
+        "liveSite": "https://karendouglas.github.io/word-guessing-game/",
+        "github": "https://github.com/KarenDouglas/word-guessing-game"
+
+    },
+    {
+        "id": 4,
+        "title": "Code Quiz",
+        "tech":[],
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "img": "../assets/projects/codeQuiz.png",
+        "liveSite": "https://karendouglas.github.io/code-quiz/",
+        "github": "https://github.com/KarenDouglas/code-quiz"
+
+    },
+    {
+        "id": 5,
+        "title": "Friends With Thoughts",
+        "tech":[],
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "img": "../assets/projects/FriendsWithThoughts.gif",
+        "liveSite": "",
+        "github": "https://github.com/KarenDouglas/friendsWithThoughts"
+
+    },
+    {
+        "id": 6,
+        "title": "Design Portfolio Challenge",
+        "tech":[],
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "img": "../assets/projects/designPortfolioChallenge.png",
+        "liveSite": "https://frontend-mentor-design-portfolio-challenge.vercel.app/",
+        "github": "https://github.com/KarenDouglas/Frontend-Mentor-Design-Portfolio-Challenge?tab=readme-ov-file"
+
+    }
+]
