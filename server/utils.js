@@ -40,7 +40,7 @@ const sendEmailConfirmation = (userName, userEmail) => {
     </head>
     <body>
         <h2>Thank you, ${userName}, for reaching out!</h2>
-        <p>Thank you for taking the time to visit <a href="https://karenthedeveloper.com/">KarenTheDevelper.com</a>. I'm thrilled to learn about your interest in potentially collaborating together</p>
+        <p>Thank you for taking the time to visit <a href="https://karenthedeveloper.com/">KarenTheDeveloper.com</a>. I'm thrilled to learn about your interest in potentially collaborating together</p>
         <p>As a detail-oriented web developer with a comprehensive understanding of both frontend and backend technologies, I am passionate about crafting user-friendly sites. Continuously learning design principles, data structures, and algorithms. I am a collaborative team player with strong independent work skills, and I'm eager to leverage my skills to help you achieve your goals.</p>
         <h2>Checkout My Social Media!</h2>
         <div>
@@ -108,7 +108,6 @@ const sendEmailMessage = (name, email, message) =>{
      return error
     }
     console.log('Message sent: %s', info.messageId);
-    return info
 });
 }
 

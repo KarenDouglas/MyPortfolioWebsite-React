@@ -32,25 +32,10 @@ app.post('/sendEmail', async(req, res) =>{
       }
       const message = await sendEmailMessage(userName, process.env.
       SMTP_USER, userMessage)
-        console.log({message})
-
-        // checks if I recieved valid information
-        if(message === undefined){
-          return res.json('Could NOT send message! Try again :(.')
-        }else if (message instanceof Error) {
-          // Handle the error
-          console.error("Error sending email message:", message);
-          return res.status(500).send("Internal Server Error");
-        }
-      const confirmation = await sendEmailConfirmation( userName, userEmail)
+     await sendEmailConfirmation( userName, userEmail)
 
     // Check if the confirmation represents an error
-    if (confirmation instanceof Error) {
-      // Handle the error
-      console.error("Error sending email confirmation:", confirmation);
-      return res.status(500).send("Internal Server Error");
-    }
-      return res.status(200).json('Email sent successfully!', message)
+      return res.status(200).json(`Email sent successfully!`)
   }catch (err){
     // Reset postCount on error
     postCount = 0;
