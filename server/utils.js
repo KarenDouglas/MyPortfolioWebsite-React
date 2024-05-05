@@ -1,4 +1,5 @@
 const nodemailer = require('nodemailer')
+
 // Create a transporter object using SMTP transport
 let transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
@@ -82,7 +83,7 @@ const sendEmailMessage = (name, email, message) =>{
     <head>
     </head>
     <body>
-    <h2>Wassup Karen, you got a message for opportunities</h2>
+    <h2>Wassup Karen, you got a message</h2>
 
     <ul>
         <li>NAME : ${name} </li>
@@ -103,9 +104,11 @@ const sendEmailMessage = (name, email, message) =>{
 
   transporter.sendMail(emailMessageOptions, (error, info) => {
     if (error) {
-        return console.log(error);
+     console.log(error);
+     return error
     }
     console.log('Message sent: %s', info.messageId);
+    return info
 });
 }
 

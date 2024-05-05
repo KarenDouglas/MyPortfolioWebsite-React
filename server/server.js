@@ -18,30 +18,47 @@ const corsOptions = {
 // uses cors options on all routes
 app.use(cors(corsOptions))
 
-
-
-
-//get 
-app.get('/',  (req, res) => {
-    res.json('Hello World!')
-})
-
-
-
-
-
 //post 
 let postCount = 0;
 app.post('/sendEmail', async(req, res) =>{
-  const {userName, userEmail, userMessage} = req.body
-  postCount++
-  // ensures that I only recieve one post request per fetch
-    if(postCount > 1){
-      postCount = 0
-      return
+
+  try {
+    const {userName, userEmail, userMessage} = req.body
+    postCount++
+    // ensures that I only recieve one post request per fetch
+      if(postCount > 1){
+        postCount = 0
+        return
+      }
+      const message = await sendEmailMessage(userName, process.env.
+      SMTP_USER, userMessage)
+        console.log({message})
+
+        // checks if I recieved valid information
+        if(message === undefined){
+          return res.json('Could NOT send message! Try again :(.')
+        }else if (message instanceof Error) {
+          // Handle the error
+          console.error("Error sending email message:", message);
+          return res.status(500).send("Internal Server Error");
+        }
+      const confirmation = await sendEmailConfirmation( userName, userEmail)
+
+    // Check if the confirmation represents an error
+    if (confirmation instanceof Error) {
+      // Handle the error
+      console.error("Error sending email confirmation:", confirmation);
+      return res.status(500).send("Internal Server Error");
     }
-    sendEmailConfirmation( userName, userEmail)
-    sendEmailMessage(userName, process.env.SMTP_USER, userMessage) 
+      return res.status(200).json('Email sent successfully!', message)
+  }catch (err){
+    // Reset postCount on error
+    postCount = 0;
+    // Handle error
+    console.error("Error:", err);
+    res.status(500).json("Internal Server Error");
+  }
+ 
 })
 
 app.listen(PORT, () => console.log(`Now listening on port: http://localhost:${PORT}`));
