@@ -55,7 +55,7 @@ export default function Form() {
                 console.error(err)
             }        
         }else{
-            alert('Enter Contact info and message to submit form')
+            alert('Enter contact info and message to submit form')
             return
         }
     }
