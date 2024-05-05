@@ -33,14 +33,15 @@ app.get('/',  (req, res) => {
 //post 
 let postCount = 0;
 app.post('/sendEmail', async(req, res) =>{
+  const {userName, userEmail, userMessage} = req.body
   postCount++
   // ensures that I only recieve one post request per fetch
     if(postCount > 1){
       postCount = 0
       return
     }
-    sendEmailConfirmation('Karen Douglas', '_')
-    sendEmailMessage('Grantie', 'fake@email.com', 'This is my thoughtful message') 
+    sendEmailConfirmation( userName, userEmail)
+    sendEmailMessage(userName, process.env.SMTP_USER, userMessage) 
 })
 
 app.listen(PORT, () => console.log(`Now listening on port: http://localhost:${PORT}`));
