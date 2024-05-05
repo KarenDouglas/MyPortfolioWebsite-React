@@ -9,7 +9,7 @@ let transporter = nodemailer.createTransport({
         pass: process.env.SMTP_PASS
     }
   })
-
+// sets mail options for smtp server
 const setEmailOptions = (userEmail,subject, htmlMessage,from) =>{
     let mailOptions = {
         from: `${from} <${process.env.SMTP_USER}>`, 
@@ -25,7 +25,7 @@ const setEmailOptions = (userEmail,subject, htmlMessage,from) =>{
     return mailOptions;
 
 }
-
+// sends emails confirmation to user
 const sendEmailConfirmation = (userName, userEmail) => {
     let subject = 'Thanks for reaching out'
     let htmlMessage = `
@@ -75,14 +75,14 @@ const sendEmailConfirmation = (userName, userEmail) => {
         console.log('Message sent: %s', info.messageId);
     });
 }
-
+// sends user's message to myself
 const sendEmailMessage = (name, email, message) =>{
   const htmlMessage = `
 <html lang="en">
     <head>
     </head>
     <body>
-    <h2>Wassup Karen, you got a message for some money</h2>
+    <h2>Wassup Karen, you got a message for opportunities</h2>
 
     <ul>
         <li>NAME : ${name} </li>
@@ -95,13 +95,13 @@ const sendEmailMessage = (name, email, message) =>{
     </body>
 </html>
   `
-  const emailConfirmOptions =  setEmailOptions(
+  const emailMessageOptions =  setEmailOptions(
     process.env.SMTP_USER,
     subject = "Yo, You Got Mail", 
     htmlMessage,"Email Assistant"
 )
 
-  transporter.sendMail(emailConfirmOptions, (error, info) => {
+  transporter.sendMail(emailMessageOptions, (error, info) => {
     if (error) {
         return console.log(error);
     }
