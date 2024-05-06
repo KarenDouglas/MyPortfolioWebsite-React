@@ -1,21 +1,18 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import { Link } from "react-router-dom"
 // style imports
 import '../css/navbar.css'
 
 
 export default function Navbar() {
+    const OPEN = 'OPEN'
+    const CLOSE  = 'CLOSE'
+    const menuBtn = useRef(null)
     // sets the image for menu icons
-    const [button, setButton] =useState('../assets/menu-inactive.png')
+    const [button, setButton] =useState(CLOSE)
     const [show, setShow] = useState(false)
     let maxSmallScreen = 460
 
-    // shows the menu options if screen is over 400px
-    useEffect(() =>{
-        if(window.innerWidth >= maxSmallScreen){
-            setShow(true)
-        }
-    },[])
     // shows menu options if screen is resized and over 400px
     useEffect(() => {
         const handleResize = () => {
@@ -37,17 +34,22 @@ export default function Navbar() {
         return () => {
           window.removeEventListener('resize', handleResize);
         };
-      }, [window.innerWidth])
+      }, [])
 
 
     // handles menu click funtionality
-    const handleMenuClick = () => {
-        if(button ==='../assets/menu-inactive.png'){
-          setButton('../assets/close-menu-button.png')
+    const handleMenuClick = (e) => {
+        if(button === CLOSE){
+            menuBtn.current.classList.add('active')
+          setButton(OPEN)
             setShow(true)
-        }else{
-            setButton('../assets/menu-inactive.png')
+            return
+        }
+        if(button === OPEN){
+            menuBtn.current.classList.remove('active')
+            setButton(CLOSE)
             setShow(false)
+            return
         }
 
     }
@@ -55,7 +57,8 @@ export default function Navbar() {
     const handleMenuReset = () => {
         if(window.innerWidth <= maxSmallScreen){
             setShow(false)
-            setButton('../assets/menu-inactive.png')
+            setButton(CLOSE)
+            menuBtn.current.classList.remove('active')
         }
     } 
     return (
@@ -63,12 +66,10 @@ export default function Navbar() {
     <section className="nav-container">  
         {/*  MENU BUTTON*/}
         <div className="menu-btn-container">
-            <button className="menu-btn inactive">        
-                <img
-                 src={button} 
-                 alt=" inactive menu button"
-                 onClick={handleMenuClick}
-                 />
+            <button onClick={handleMenuClick}className="menu-btn" ref={menuBtn}>        
+            <span className="m-span"></span>
+            <span className="m-span"></span>
+            <span className="m-span"></span>
             </button>
         </div> 
         {/* NAVIGATION LINKS */}

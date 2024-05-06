@@ -29,12 +29,46 @@
     width: 100%;
 }
 .menu-btn{
-padding: 20px;
-max-width: fit-content;
-background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 90px;
+    padding: 10px 15px;
+background-color: transparent;
+border: none;
+position: relative;
 }
-.menu-btn img{
-    height: 50px;
+.menu-btn .m-span{
+    background-color: var(--greenColor);
+    width:  50px;
+    height: 5px;
+    border-radius: 10px;
+    transform-origin: center center;
+
+}
+.active{
+    width: 70px;
+    height: 90px;
+
+}
+.active .m-span{
+    position: absolute;
+    width: 50px;
+    background-color: var(--greenColor);
+}
+.active .m-span:nth-child(even){
+
+    display: none;
+
+}
+.active .m-span:nth-child(1){
+    transform: rotate(45deg);
+}
+.active .m-span:nth-child(3){
+    transform: rotate(-45deg);
+
 }
 /* Navigation Styles for medium screens */
 @media screen and (min-width: 460px) {
