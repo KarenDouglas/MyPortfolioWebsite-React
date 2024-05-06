@@ -11,7 +11,7 @@ app.use(express.json())
 
 // middleware to set CORS headers for specific routes
 const corsOptions = {
-  origin: ['http://127.0.0.1:5173', 'https://karenportfolio.netlify.app','https://karenthedeveloper.com/'], // enabling specific domains
+  origin: ['http://127.0.0.1:5173', 'https://karenportfolio.netlify.app','https://karenthedeveloper.com'], // enabling specific domains
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }
