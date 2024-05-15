@@ -3,7 +3,7 @@
 
 ## Live Site
 [View the Live Site](https://karenthedeveloper.com/)
-![karenPorfolioSite](./public/assets/karenPortfolioSite.png)
+![karenPorfolioSite](./client/public/assets/projects/karenPortfolioSite.png)
 
 # Description
 Welcome to my portfolio website! This platform serves as a comprehensive showcase of my professional journey, highlighting my skills, experiences, and projects. Crafted with React, it offers a dynamic and intuitive user experience.
@@ -19,6 +19,10 @@ At the heart of this website is my resume section, where you can delve into my a
 - Vite
 - HTML5
 - CSS
+- SMTP Server
+- Node.js
+- Express
+- Figma
 
  ## Instructions
  
