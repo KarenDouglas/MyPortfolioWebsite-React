@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "title": "ThinkFlash: AI Flash Card Generator",
+        "title": "ThinkFlash: AI Flash Cards",
         "tech": [
             "React",
             "MongoDB",
