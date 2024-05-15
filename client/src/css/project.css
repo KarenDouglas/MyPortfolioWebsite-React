@@ -64,6 +64,20 @@ color: var(--greenColor);
 .projects-list a:hover{
     text-decoration: underline;
 }
+
+.project-tech-list{
+    padding-left: 60px ;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: square;
+    max-width: 90%;
+    margin: 0 auto 20px auto;
+    text-transform: uppercase;
+    font-size: small;
+    gap: 20px;
+
+}
+
 @media screen and (min-width: 630px){
 
     .project-img{
