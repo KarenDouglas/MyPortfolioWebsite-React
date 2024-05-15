@@ -2,8 +2,8 @@
 
 
 ## Live Site
-[View the Live Site](https://karenportfolio.netlify.app/)
-![karenPorfolioSite](client/public/assets/karenPortfolioSite.png)
+[View the Live Site](https://karenthedeveloper.com/)
+![karenPorfolioSite](./public/assets/karenPortfolioSite.png)
 
 # Description
 Welcome to my portfolio website! This platform serves as a comprehensive showcase of my professional journey, highlighting my skills, experiences, and projects. Crafted with React, it offers a dynamic and intuitive user experience.
