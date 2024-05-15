@@ -9,7 +9,9 @@
             "Node.js",
             "JWT Auth",
             "CSS",
-            "OpenAI API"
+            "OpenAI API",
+            "Apollo GraphQl",
+            "Figma"
         ],
         "desc": "This innovative project empowers users to create flash cards effortlessly using artificial intelligence technology. Built with the MERN stack, the application offers a seamless user experience with features such as JWT authentication for secure access and integration with the OpenAI API for advanced AI capabilities.",
         "img": "../assets/projects/thinkFlashScreenShot.png",
@@ -87,7 +89,10 @@
             "React Router",
             "Vite",
             "HTML5",
-            "CSS"
+            "CSS",
+            "SMTP Server",
+            "Node.js",
+            "Express"
         ],
         "desc": "This platform serves as a gateway for users to learn more about me as a software developer and explore my recent projects. Through this responsive website, users can gain insights into my skills, experience, and passion for coding. Whether you're curious about my background, interested in collaborating on projects",
         "img": "../assets/projects/karenPortfolioSite.png",
