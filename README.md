@@ -30,11 +30,17 @@ At the heart of this website is my resume section, where you can delve into my a
 ```bash
 npm i
 ```
-To start Porfolio Website:
+To start Porfolio Website in client directory:
 ```bash
 npm run dev
 
 ```
+To start SMTP Server in server directory:
+```bash
+npm run start
+
+```
+
 ## Author
 
 - LinkedIn: [@KarenDouglas](https://www.linkedin.com/in/karen-douglas-344974246/)
