@@ -20,6 +20,12 @@ export default function Project(props) {
                         <header className="project-title">
                             <h1>{props.title}</h1>
                         </header>
+                        <ul className='project-tech-list'>
+                            {props.tech && 
+                            props.tech.map((item, index) => (
+                                <li key={index}>{item}</li>
+                            ))}
+                        </ul>
                         <article className="project-desc-container">
                             <p className="desc">{props.desc}</p>
                             <section className='project-link-group'>
