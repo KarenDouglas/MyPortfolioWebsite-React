@@ -21,7 +21,7 @@ export default function Card({form, title, text}) {
                 <section className='resume-container'>
                    <h1>Download PDF</h1>
                    <p>Click the link below to download  my resume (PDF):</p>
-                   <a href="../assets/KarenDouglasResume_3-24.pdf" download>Download PDF</a>
+                   <a href="../assets/KarenDouglasFullStackResume.pdf" download>Download PDF</a>
                  </section>
                 }
                 {/* renders form */}
