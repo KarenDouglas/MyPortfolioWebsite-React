@@ -1,0 +1,20 @@
+footer{
+    position: relative;
+    margin-top: 40px;
+}
+footer nav{
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+.footer-nav{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+}
+
+.footer-nav img{
+    max-height: 40px;
+}
+

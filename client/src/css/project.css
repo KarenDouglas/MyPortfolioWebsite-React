@@ -66,16 +66,18 @@ color: var(--greenColor);
 }
 
 .project-tech-list{
-    padding-left: 60px ;
+    padding: 10px 0;
     display: flex;
     flex-wrap: wrap;
-    list-style-type: square;
-    max-width: 90%;
-    margin: 0 auto 20px auto;
+    max-width: 60%;
+    margin: 10px auto;
     text-transform: uppercase;
     font-size: small;
     gap: 20px;
-
+    list-style: square;
+    justify-content: center;
+    border-top: var(--pinkColor) solid;
+    border-bottom:  var(--greenColor) solid;
 }
 
 @media screen and (min-width: 630px){
@@ -108,5 +110,9 @@ color: var(--greenColor);
     }
     .projects-list-container h1{
         font-size: var(--fontLarge);
+    }
+    .project-tech-list{
+        justify-content: left;
+        margin: 10px 0px 10px 60px;
     }
 }
