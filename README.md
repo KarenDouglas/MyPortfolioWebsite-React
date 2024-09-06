@@ -19,10 +19,13 @@ At the heart of this website is my resume section, where you can delve into my a
 - Vite
 - HTML5
 - CSS
+- cors
 - SMTP Server
 - Node.js
 - Express
 - Figma
+- Heroku
+- Netlify
 
  ## Instructions
  
