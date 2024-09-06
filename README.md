@@ -1,5 +1,5 @@
 # My Portfolio Website
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9150511c-1792-47a6-bf18-5f922d5f2d74/deploy-status)](https://app.netlify.com/sites/karenportfolio/deploys)
 
 ## Live Site
 [View the Live Site](https://karenthedeveloper.com/)
